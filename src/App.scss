@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap");
+
+$black: rgb(42, 42, 42);
+$red: rgb(255, 0, 0);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: $black;
+  line-height: 1.5;
+}
+
+.container {
+  width: 500px;
+  // this app is not responsive
+  margin: 0 auto;
+  padding: 25px;
+  border: 2px solid $black;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vw;
+}
+
+header {
+  h1 {
+    font-size: 2rem;
+  }
+  nav {
+    padding: 10px 0;
+  }
+}
+
+.to-do-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  button {
+    padding: 0 10px;
+    background-color: $red;
+    border: none;
+    font-size: 1rem;
+    color: white;
+  }
+}
+
+form {
+  padding: 10px 0;
+  input[type="text"] {
+    padding: 0 10px;
+    border: 1px solid $black;
+    font-size: 1rem;
+  }
+
+  input[type="submit"] {
+    padding: 0 10px;
+    margin: 0 5px;
+    border: 1px solid $black;
+    font-size: 1rem;
+  }
+}
